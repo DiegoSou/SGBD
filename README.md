@@ -1,4 +1,4 @@
-# Create .env file
+## Create .env file
 
 ```
 CRYPTO_SECRET=your_crypto_secret
@@ -10,7 +10,7 @@ DB_PASSWORD=db_password
 DB_PORT=db_port
 ```
 
-# Execute docker
+## Execute docker
 
 ```
 docker-compose up
