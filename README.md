@@ -28,3 +28,30 @@ run: docker-compose up
 after you do these steps, just close the server and run again:
     docker-compose up
 ```
+
+## Docker util commands
+
+```
+docker ps
+docker images
+docker start [container_name]
+docker stop [container_name]
+sudo systemctl start/stop/status docker
+```
+
+## Verify alreary using port
+
+```
+sudo ss -lptn 'sport= :port'
+lsof -i :port | grep 'LISTEN'
+```
+
+## Npm util commands
+
+```
+npm init -y
+npm install prisma typescript ts-node @types/node
+npx tsc --init
+npx prisma
+npx prisma init
+```
