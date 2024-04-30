@@ -37,6 +37,11 @@ docker images
 docker start [container_name]
 docker stop [container_name]
 sudo systemctl start/stop/status docker
+docker build -t image_name:1.0 .
+docker build --platform linux/amd64 -t image_name:1.0 .
+docker run image_name:1.0
+docker run -p local_port:container_port image_name:1.0
+docker run -P image_name:1.0
 ```
 
 ## Verify alreary using port
